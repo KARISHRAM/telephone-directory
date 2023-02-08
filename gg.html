@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Telephone Directory</title>
+  <link rel="shortcut icon" type="image/jpg" href="images/tele.jpg"/>
+  <link rel="stylesheet" type="text/css" href="gg.css">
+</head>
+<body>
+  <header>
+    <h1>Karish Telephone Directory for Namakkal</h1>
+  </header>
+<!--   <nav>
+    <ul>
+      <li><a href="#add-contact">Add Contact</a></li>
+      <li><a href="#search-contact">Search Contact</a></li>
+    </ul>
+  </nav> -->
+  <main>
+    <section id="add-contact">
+      <h2>Add Contact</h2>
+      <form action="add_gg.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="telephone">Telephone:</label>
+<!--         <select id="countryCode" name="countryCode">
+            <option value="+91">+91 India</option>
+            <option value="+1">+1 United States</option>
+            <option value="+44">+44 United Kingdom</option>
+            <option value="+62">+62 Indonesia</option>
+            <option value="+966">+966 Saudi Arabia</option>
+            <option value="+81">+81 Japan</option>
+        </select> -->
+        <input type="text" id="telephone" name="telephone">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section id="search-contact">
+      <h2>Search Contact</h2>
+      <form action="#" method="post" id="search-form">
+        <label for="query">Query:</label>
+        <input type="text" id="query" name="query">
+        <br>
+        <input type="submit" value="Search">
+      </form>
+      <table id="results">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Telephone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Results will be inserted here via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Telephone Directory</p>
+  </footer>
+  <script src="gg.js"></script>
+</body>
+</html>
